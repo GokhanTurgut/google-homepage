@@ -1,235 +1,252 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Google</title>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 
-        <style type="text/css">
-            body,html {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, Helvetica, sans-serif;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-            }
+<head>
+    <title>Google</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-            .nav-bar {
-                list-style-type: none;
-                display: flex;
-                justify-content: flex-end;
-                color: rgba(0, 0, 0, 0.80);
-                font-size: 13px;
-                align-items: center;                
-                
-            }
+    <style type="text/css">
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-            .nav-bar a {
-                text-decoration: none;
-                color: rgba(0, 0, 0, 0.80);
-            }
+        .nav-bar {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            color: rgba(0, 0, 0, 0.80);
+            font-size: 13px;
+            align-items: center;
 
-            .nav {
-                margin-left: 15px;
-            }
-            
-            .nav:hover {
-                text-decoration: underline;
-            }
+        }
 
-            #apps {
-                padding: 8px;
-                margin-left: 12px;
-                color: rgba(0, 0, 0, 0.5);
-                font-size: 25px;
-            }
+        .nav-bar a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.80);
+        }
 
-            #apps:hover {
-                background-color: rgba(175, 175, 175, 0.300);
-                border-radius: 50%;
-            }
+        .nav {
+            margin-left: 15px;
+        }
 
-            #profile-pic {
-                margin: 0 20px 0 12px;
-                border-radius: 50%;                
-                overflow: hidden;               
-            }
+        .nav:hover {
+            text-decoration: underline;
+        }
 
-            .content {
-                display: flex;
-                flex-direction: column;
-                width: auto;
-                flex: 5;
-                align-content: stretch;
-                align-items: center;
-                justify-content: center;               
+        #apps {
+            padding: 8px;
+            margin-left: 12px;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 25px;
+        }
 
-            }
+        #apps:hover {
+            background-color: rgba(175, 175, 175, 0.300);
+            border-radius: 50%;
+        }
 
-            .box1 {
-                display: flex;
-                flex-grow: 1;
-                flex-shrink: 999;
+        #profile-pic {
+            margin: 0 20px 0 12px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
 
-            }
-            
-            .main {
-                flex-grow: 5;
-                flex-shrink: 0;
-                width: 100%;
-                display: flex;               
-                justify-content: center;
-                align-items: flex-start;
-                flex-wrap: wrap;   
-                align-content: flex-start;                           
-            }
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            flex: 5;
+            align-content: stretch;
+            align-items: center;
+            justify-content: center;
 
-            #google-logo {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-            }
+        }
 
-            .search-sec {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-            }
+        .box1 {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 999;
 
-            .search-section {
-             width: 600px;
-             height: 40px;
-             display: flex;
-             justify-content: center;
-             align-content: center;
-             align-items: center;
-             margin: 20px;
-             border: solid rgba(175, 175, 175, 0.200);
-             border-radius: 30px;          
-            }
+        }
 
-            #search-bar {
-                width: 520px;
-                height: 37px;
-                border: none;
-                outline: none;
-                font-size: 16px;
-                font-family: Arial, Helvetica, sans-serif;
-            }           
-            
-            #search-icon {
-                margin-left: 5px;
-                margin-right: 15px;
-                font-size: 20px;
-                color: rgba(0, 0, 0, 0.5);
-            }
+        .main {
+            flex-grow: 5;
+            flex-shrink: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
 
-            .search-button {
-                margin: 10px 3px;
-                font-size: 14px;
-                border: none;
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 10px 20px;
-                cursor: pointer;
-                border-radius: 3px;
-                background-color: rgba(128, 128, 128, 0.1);
-            }
+        #google-logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
-            .search-button:hover {
-                border: 1px solid rgba(175, 175, 175, 0.5);
-                padding: 9px 19px;
-            }
+        .search-sec {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
 
-            footer {                
-                background-color: rgba(175, 175, 175, 0.200);
-                border-top: 1px solid rgba(0, 0, 0, 0.205);
-                padding: 15px 5px;                             
-            }
+        .search-section {
+            width: 600px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin: 20px;
+            border: solid rgba(175, 175, 175, 0.200);
+            border-radius: 30px;
+        }
 
-            .footer {
-                display: flex;
-                list-style-type: none;
-                justify-content: space-between;
-                
-            }
- 
-            .footer a{
-                text-decoration: none;
-                color: rgba(0, 0, 0, 0.60);
-                font-size: 14px;
-                padding: 0 20px;
-            }
+        #search-bar {
+            width: 520px;
+            height: 37px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-            .footer a:hover {
-                text-decoration: underline;
-            }
+        #search-icon {
+            margin-left: 5px;
+            margin-right: 15px;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.5);
+        }
 
-            .footer-right {
-                justify-content: space-around;
-                display: flex;
-            }
-            
-            .footer-left {
-                justify-content: space-around;
-                display: flex;
-            }
+        .search-button {
+            margin: 10px 3px;
+            font-size: 14px;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            background-color: #f8f9fa;
+            color: #202124;
+        }
 
-        </style>
-    </head>      
+        .search-button:hover {
+            border: 1px solid rgba(175, 175, 175, 0.5);
+            padding: 9px 19px;
+        }
 
-    <body>
-        <header>
-            
+        footer {
+            background-color: rgba(175, 175, 175, 0.200);
+            border-top: 1px solid rgba(0, 0, 0, 0.205);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-first {
+            width: 100%;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.60);
+            padding: 15px;
+
+        }
+
+        .footer-second {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            width: 100%;
+            border-top: 1px solid rgba(0, 0, 0, 0.205);
+        }
+
+        .footer-second a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.60);
+            font-size: 14px;
+            padding: 15px;
+        }
+
+        .footer-second a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            justify-content: space-around;
+            display: flex;
+
+        }
+
+        .footer-left {
+            justify-content: space-around;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
         <ul class="nav-bar">
             <li class="nav"><a href="">Gmail</a></li>
             <li class="nav"><a href="">Images</a></li>
             <li><a class="material-icons" id="apps" href="">apps</a></li>
-            <li id="profile-pic"><a href="https://github.com/GokhanTurgut" target="_blank"><img src="profile-pic.jpg" alt="Profile Picture"></a></li>
+            <li id="profile-pic"><a href="https://github.com/GokhanTurgut" target="_blank"><img src="profile-pic.jpg"
+                        alt="Profile Picture"></a></li>
         </ul>
 
-        </header>
-        
-        <div class="content">   
-            <div class="box1"></div>
+    </header>
 
-            <div class="main">
-                
-                <div id="google-logo"><img src="googlelogo.png" alt="Google logo"></div>                          
-                
-                <div class="search-sec">
+    <div class="content">
+        <div class="box1"></div>
+
+        <div class="main">
+
+            <div id="google-logo"><img src="googlelogo.png" alt="Google logo"></div>
+
+            <div class="search-sec">
                 <div class="search-section">
                     <i class="material-icons" id="search-icon">search</i>
                     <input type="text" id="search-bar" name="search-bar"><br>
                 </div>
-                </div>
-                <div class="button-section">  
-                    <button type="button" class="search-button">Google Search</button>
-                    <button type="button" class="search-button">I'm Feeling Lucky</button>   
-                </div>
-            </div>       
-            
+            </div>
+            <div class="button-section">
+                <button type="button" class="search-button">Google Search</button>
+                <button type="button" class="search-button">I'm Feeling Lucky</button>
+            </div>
         </div>
 
-        <footer>
-            <div class="footer">
-                <div class="footer-right">
+    </div>
+
+    <footer>
+        <div class="footer-first">
+            Location
+        </div>
+
+        <div class="footer-second">
+            <div class="footer-right">
                 <a class="footer-nav" href="">About</a>
                 <a class="footer-nav" href="">Advertising</a>
                 <a class="footer-nav" href="">Business</a>
                 <a class="footer-nav" href="">How Search works</a>
-                </div>
-                <div class="footer-left">
+            </div>
+            <div class="footer-left">
                 <a class="footer-nav" href="">Privacy</a>
                 <a class="footer-nav" href="">Terms</a>
                 <a class="footer-nav" href="">Settings</a>
-                </div>
             </div>
-        </footer>
-    
-    </body>
-    
+        </div>
+    </footer>
+
+</body>
+
 </html>
