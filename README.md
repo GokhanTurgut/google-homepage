@@ -1,5 +1,5 @@
 # Google Clone
-Project for Learning/Practising HTML and CSS with cloning Google homepage.
+Project for Learning/Practising HTML and CSS by cloning Google homepage.
 
 Learning project from The Odin Project.
 
